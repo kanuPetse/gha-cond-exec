@@ -81,5 +81,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Generate failure report
-      - run: echo "something went wront"
-      
+        run: |
+            echo "something went wront"
+            echo "${{toJSON(github)}}"
